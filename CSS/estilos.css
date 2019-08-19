@@ -48,6 +48,15 @@ img{
 .d-block{
 Display: block!important;
 }
+.fw-300{
+  font-weight: 300;
+  text-align: center;
+}
+
+.centrar-texto{
+    text-align: center;
+
+}
 
 /**botones*/
 
@@ -69,10 +78,16 @@ text-align: center;
 .boton-verde{
   background-color: #71B100;
 
+
 }
 
 
 /* header */
+.site-header{
+  background-color: #333333;
+  padding: 1rem 0 3rem 0;
+
+}
 
 .site-header.inicio{
   background-image: url(../img/header.jpg);
@@ -117,15 +132,6 @@ text-align: center;
 }
 
 /**iconos nosotros**/
-.fw-300{
-  font-weight: 300;
-  text-align: center;
-}
-
-.centrar-texto{
-    text-align: center;
-
-}
 
 .iconos-nosotros{
   display: flex;
@@ -282,4 +288,22 @@ margin-top: 1rem;
 .copyright{
   margin: 0;
   color:#ffffff;
+}
+
+/** para las otras paginas internas **/
+
+.contenedor-nosotros{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+
+}
+.texto-nosotros blockquote{
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 0;
+  padding: 3rem 0;
+}
+.texto-nosotros p{
+  text-align: justify;
 }
