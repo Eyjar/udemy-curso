@@ -51,7 +51,7 @@ h1 {
  * /
 
 h {
-  tamaño de caja: caja de contenido; / * 1 * /
+  tamaño de contenedor: contenedor de contenido; / * 1 * /
   altura: 0; / * 1 * /
   desbordamiento: visible; / * 2 * /
 }
@@ -238,7 +238,7 @@ conjunto de campo {
  * /
 
 leyenda {
-  tamaño de la caja: border-box; / * 1 * /
+  tamaño de la contenedor: border-box; / * 1 * /
   color: heredar; / * 2 * /
   pantalla: mesa; / * 1 * /
   ancho máximo: 100%; / * 1 * /
@@ -269,7 +269,7 @@ textarea {
 
 [type = "casilla de verificación"],
 [type = "radio"] {
-  tamaño de la caja: border-box; / * 1 * /
+  tamaño de la contenedor: border-box; / * 1 * /
   relleno: 0; / * 2 * /
 }
 
