@@ -1,8 +1,10 @@
 /*body*/
+
 html {
   box-sizing: border-box;
   font-size:62.5%; /**reset para REMS - 62.5% = 10px de 16px **/
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -57,6 +59,9 @@ Display: block!important;
     text-align: center;
 
 }
+.contenido-centrado{
+  max-width: 80rem;
+}
 
 /**botones*/
 
@@ -69,6 +74,11 @@ padding: 1rem 3rem;
 margin-top: 3rem; /** si no tiene un display:inline-block, no va funcionar, porque los enlaces por default tiene un display:inline**/
 display: inline-block;
 text-align: center;
+border: none;
+}
+.boton:hover {
+  cursor: pointer;
+
 }
 
 .boton-amarillo{
@@ -77,12 +87,10 @@ text-align: center;
 }
 .boton-verde{
   background-color: #71B100;
-
-
 }
 
-
 /* header */
+
 .site-header{
   background-color: #333333;
   padding: 1rem 0 3rem 0;
@@ -173,7 +181,9 @@ text-align: center;
   list-style: none;
   padding: 0;
   display:flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex:1;
+  max-width: 50rem;
 }
 .icono-caracteristicas li{
   display: flex;
@@ -293,6 +303,7 @@ margin-top: 1rem;
 }
 
 /** para las otras paginas internas **/
+/** Nosotros**/
 
 .contenedor-nosotros{
   display: grid;
@@ -309,3 +320,67 @@ margin-top: 1rem;
 .texto-nosotros p{
   text-align: justify;
 }
+/**anuncio**/
+.resumen-propiedad{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+/* Contactos**/
+.contacto p{
+  font-size: 1.4rem;
+  color: #4f4f4f;
+  margin: 2rem 0 0 0;
+}
+
+legend {
+  font-size: 2.4rem;
+  color: #807d7d;
+}
+label {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/** ejemplo si son 2 input, pero mayor lines debemos de usar 
+la segunda opciòn de abajo de este ejemplo
+input[type="text"], input[type="email"] {
+  padding: 1rem;
+  width:100%;
+  display: block;
+  background-color: #e1e1e1;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 1rem;
+  
+} **/
+
+input:not([type="submit"]), textarea, select{
+  padding: 1rem;
+  width:100%;
+  display: block;
+  background-color: #e1e1e1;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 1rem;
+}
+select{
+  -webkit-appearance: none;
+  appearance: none;
+}
+input[type="radio"]{
+  width: auto;
+  margin: 0;
+}
+textarea{
+  height: 20rem;
+}
+.forma-contacto{
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
